@@ -1,0 +1,155 @@
+/* Global Layout Set-up */
+body{
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  box-sizing: border-box;
+  color:#2D3945;
+}
+
+main{
+ margin:0 auto;
+ width:90%;
+}
+
+h2{
+  font-size: 1.4em;
+}
+
+p,label{
+  color:#617383;
+  line-height: 1.4em;
+}
+
+hr{
+  margin:0.2em 0;
+  color:#2D3945;
+  border-top: 1.25px solid black;
+}
+
+.main-header p,
+footer p{
+  color:#A8ADB2;
+  font-size: 0.8em;
+}
+
+/* Main-Nav */
+.main-nav{
+  padding:2em;
+  background-color: #2D3945;
+  margin-bottom: 2.5em;
+}
+
+h1{
+  color:white;
+  font-size:1.5em;
+}
+
+/* Main-Header */
+.thick{
+  margin-top: 2em;
+  border-top: 3px black solid;
+}
+
+.thin{
+  margin-bottom: 1em;
+}
+/* Main-Form */
+
+fieldset{
+  text-align: left;
+  padding:0 0.2em;
+  border:none;
+  display: flex;
+}
+
+.contact-info{
+  margin-bottom:1em;
+}
+
+.contact-info h2{
+  margin-bottom: 1.6em;
+}
+
+label,
+.newsletter-section div{
+  margin:0.7em 0;
+}
+
+input:focus,
+#state:focus{
+  outline-color: #2D3945;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea{
+  width:100%;
+  background-color: #EFF0F1;
+  border-radius: 2px;
+  border-width: 0;
+  border-style:none;
+  box-sizing: border-box;
+  height: 3em;
+  margin: 0.8em 0 1.2em 0;
+  align-self: center;
+  padding:0.5em 1em;
+}
+
+::placeholder { 
+  text-align: right;
+  font-weight: 300;
+  font-style:italic;
+  color:#A8ADB2;
+}
+
+.newsletter-section input[type="submit"]{
+  background-color: #4EBBB5;
+  width:100%;
+  color: white;
+}
+
+textarea{
+  margin-top: 0;
+  height: 6em;
+}
+
+div[class="options"]{
+  margin-bottom:2em;
+}
+
+label[for="topics"]{
+  margin-bottom: 0;
+}
+
+#state{
+  color:#A8ADB2;
+  font-weight: 300;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat, repeat;
+  /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+  background-position: right .7em top 50%, 0 0;
+  /* icon size, then gradient */
+  background-size: .65em auto, 100%;
+}
+
+/* Footer */
+
+/* Media Query */
+@media(min-width:760px){
+  main{
+    margin:0 auto;
+    width:60%;
+   }
+  input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]),
+  select{
+    margin-right: 0;
+    width:70%;
+  }
+
+  .contact-info div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
